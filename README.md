@@ -17,3 +17,5 @@
 044 [Wildcard Matching](https://oj.leetcode.com/problems/wildcard-matching/)
 
 062 [Unique Paths] (https://oj.leetcode.com/problems/unique-paths/)
+
+096 [Unique Binary Search Trees] (https://oj.leetcode.com/problems/unique-binary-search-trees/)
