@@ -23,3 +23,5 @@
 096 [Unique Binary Search Trees] (https://oj.leetcode.com/problems/unique-binary-search-trees/)
 
 120 [Triangle] (https://oj.leetcode.com/problems/triangle/)
+
+010 [Regular Expression Matching] (https://oj.leetcode.com/problems/regular-expression-matching/)
