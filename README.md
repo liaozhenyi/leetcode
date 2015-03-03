@@ -27,3 +27,5 @@
 010 [Regular Expression Matching] (https://oj.leetcode.com/problems/regular-expression-matching/)
 
 132 [Palindrome Partitioning II] (https://oj.leetcode.com/problems/palindrome-partitioning-ii/)
+
+064 [Minimum Path Sum] (https://oj.leetcode.com/problems/minimum-path-sum/)
