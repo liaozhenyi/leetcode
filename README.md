@@ -29,3 +29,5 @@
 132 [Palindrome Partitioning II] (https://oj.leetcode.com/problems/palindrome-partitioning-ii/)
 
 064 [Minimum Path Sum] (https://oj.leetcode.com/problems/minimum-path-sum/)
+
+152 [Maximum Product Subarray] (https://oj.leetcode.com/problems/maximum-product-subarray/)
