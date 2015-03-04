@@ -32,6 +32,8 @@
 
 152 [Maximum Product Subarray] (https://oj.leetcode.com/problems/maximum-product-subarray/)
 
+032 [Longest Valid Parentheses] (https://oj.leetcode.com/problems/longest-valid-parentheses/)
+
 072 [Edit Distance] (https://oj.leetcode.com/submissions/detail/22238447/)
 
 174 [Dungeon Game] (https://oj.leetcode.com/problems/dungeon-game)
