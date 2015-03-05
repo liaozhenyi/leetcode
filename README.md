@@ -36,6 +36,8 @@
 
 152 [Maximum Product Subarray] (https://oj.leetcode.com/problems/maximum-product-subarray/)
 
+085 [Maximal Rectangle] (https://oj.leetcode.com/problems/maximal-rectangle/)
+
 032 [Longest Valid Parentheses] (https://oj.leetcode.com/problems/longest-valid-parentheses/)
 
 097 [Interleaving String] (https://oj.leetcode.com/problems/longest-valid-parentheses/)
