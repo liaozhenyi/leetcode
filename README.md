@@ -14,6 +14,8 @@
 
 139 [Word Break](https://oj.leetcode.com/problems/word-break/)
 
+140 [Word Break II] (https://oj.leetcode.com/problems/word-break-ii/)
+
 044 [Wildcard Matching](https://oj.leetcode.com/problems/wildcard-matching/)
 
 062 [Unique Paths] (https://oj.leetcode.com/problems/unique-paths/)
@@ -21,6 +23,8 @@
 063 [Unique Paths ii] (https://oj.leetcode.com/problems/unique-paths-ii/)
 
 096 [Unique Binary Search Trees] (https://oj.leetcode.com/problems/unique-binary-search-trees/)
+
+095 [Unique Binary Search Trees II] (https://oj.leetcode.com/problems/unique-binary-search-trees-ii/)
 
 120 [Triangle] (https://oj.leetcode.com/problems/triangle/)
 
