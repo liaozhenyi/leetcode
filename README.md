@@ -61,3 +61,5 @@
 ### Greedy
 
 055 [Jump Game] (https://oj.leetcode.com/problems/jump-game/)
+
+045 [Jump Game II] (https://oj.leetcode.com/problems/jump-game-ii/)
