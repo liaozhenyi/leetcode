@@ -57,3 +57,7 @@
 188 [Best Time to Buy and Sell Stock IV] (https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
 
 123 [Best Time to Buy and Sell Stock III] (https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)
+
+### Greedy
+
+055 [Jump Game] (https://oj.leetcode.com/problems/jump-game/)
