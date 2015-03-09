@@ -63,3 +63,7 @@
 055 [Jump Game] (https://oj.leetcode.com/problems/jump-game/)
 
 045 [Jump Game II] (https://oj.leetcode.com/problems/jump-game-ii/)
+
+134 [Gas Station] (https://leetcode.com/problems/gas-station/)
+
+135 [Candy] (https://leetcode.com/problems/candy/)
