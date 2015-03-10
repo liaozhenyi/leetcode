@@ -73,3 +73,7 @@
 ### Binary Search
 
 069 [Sqrt(x)] (https://leetcode.com/problems/sqrtx/)
+
+035 [Search Insert Position] (https://leetcode.com/problems/search-insert-position/)
+
+033 [Search in Rotated Sorted Array] (https://leetcode.com/problems/search-in-rotated-sorted-array/)
