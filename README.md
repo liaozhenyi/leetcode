@@ -69,3 +69,7 @@
 135 [Candy] (https://leetcode.com/problems/candy/)
 
 122 [Best Time to Buy and Sell Stock] (https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
+
+### Binary Search
+
+069 [Sqrt(x)] (https://leetcode.com/problems/sqrtx/)
