@@ -78,6 +78,8 @@
 
 033 [Search in Rotated Sorted Array] (https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
+081 [Search in Rotated Sorted Array II] (https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
+
 034 [Search for a Range] (https://leetcode.com/problems/search-for-a-range/)
 
 074 [Search a 2D Matrix] (https://leetcode.com/problems/search-a-2d-matrix/)
