@@ -85,3 +85,5 @@
 074 [Search a 2D Matrix] (https://leetcode.com/problems/search-a-2d-matrix/)
 
 050 [Pow(x,n)] (https://leetcode.com/problems/powx-n/)
+
+162 [Find Peak Element] (https://leetcode.com/problems/find-peak-element/)
