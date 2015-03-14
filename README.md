@@ -87,3 +87,5 @@
 050 [Pow(x,n)] (https://leetcode.com/problems/powx-n/)
 
 162 [Find Peak Element] (https://leetcode.com/problems/find-peak-element/)
+
+153 [Find Minimum in Rotated Sorted Array] (https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
