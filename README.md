@@ -97,3 +97,5 @@
 ### Hash Table
 
 036 [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
+
+136 [Single Number](https://leetcode.com/problems/single-number/)
