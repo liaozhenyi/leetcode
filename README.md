@@ -98,4 +98,8 @@
 
 036 [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
 
+001 [Two Sum](https://leetcode.com/problems/two-sum/)
+
 136 [Single Number](https://leetcode.com/problems/single-number/)
+
+187 [Repeated DNA Sequences] (https://leetcode.com/problems/repeated-dna-sequences/)
