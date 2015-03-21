@@ -123,3 +123,5 @@
 042 [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
 
 078 [Subsets](https://leetcode.com/problems/subsets/)
+
+054 [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
