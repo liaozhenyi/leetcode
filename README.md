@@ -131,3 +131,5 @@
 075 [Sort Colors](https://leetcode.com/problems/sort-colors/)
 
 073 [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
+
+048 [Rotate Image](https://leetcode.com/problems/rotate-image/)
