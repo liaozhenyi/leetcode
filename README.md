@@ -133,3 +133,7 @@
 073 [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 
 048 [Rotate Image](https://leetcode.com/problems/rotate-image/)
+
+189 [Rotate Array](https://leetcode.com/problems/rotate-array/)
+
+027 [Remove Element](https://leetcode.com/problems/remove-element/)
