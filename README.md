@@ -143,3 +143,5 @@
 080 [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 
 066 [Plus One](https://leetcode.com/problems/plus-one/)
+
+118 [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)
