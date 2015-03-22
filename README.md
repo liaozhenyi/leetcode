@@ -141,3 +141,5 @@
 026 [Romove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
 080 [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+
+066 [Plus One](https://leetcode.com/problems/plus-one/)
