@@ -137,3 +137,5 @@
 189 [Rotate Array](https://leetcode.com/problems/rotate-array/)
 
 027 [Remove Element](https://leetcode.com/problems/remove-element/)
+
+026 [Romove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
