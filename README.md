@@ -149,3 +149,7 @@
 119 [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)
 
 031 [Next Permutation](https://leetcode.com/problems/next-permutation/)
+
+088 [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+
+057 [Insert Interval](https://leetcode.com/problems/insert-interval/)
