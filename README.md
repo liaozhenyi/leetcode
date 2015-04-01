@@ -159,3 +159,5 @@
 191 [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 
 190 [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
+
+172 [Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)
