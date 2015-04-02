@@ -165,3 +165,5 @@
 171 [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)
 
 168 [Excel Sheet Column Line](https://leetcode.com/problems/excel-sheet-column-title/)
+
+166 [Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/)
