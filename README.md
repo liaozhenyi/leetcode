@@ -169,3 +169,5 @@
 166 [Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/)
 
 165 [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)
+
+160 [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
