@@ -184,6 +184,8 @@
 
 149 [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/)
 
+148 [Sort List](https://leetcode.com/problems/sort-list/)
+
 147 [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)
 
 145 [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
