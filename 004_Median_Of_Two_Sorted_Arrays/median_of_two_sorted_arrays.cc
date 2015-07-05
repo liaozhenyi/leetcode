@@ -6,12 +6,6 @@
 
 **********************************************************************/
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-
-using namespace std;
-
 double findMedianSortedArrays(int A[], int m, int B[], int n) {
 	int midIndexA, midIndexB, cut;
 	vector<double> arr;
@@ -66,22 +60,57 @@ double findMedianSortedArrays(int A[], int m, int B[], int n) {
 		return findMedianSortedArrays(&A[cut], m-cut, B, n-cut);
 }
 
-int main(int argc, char *argv[])
-{
-	int arr1[1] = {1};
-	int arr2[2] = {3, 5};
-	int arr3[3] = {2, 3, 4};
-	int arr4[4] = {5, 6, 7, 8};
-	int arr5[4] = {6, 7, 8, 9};
-	int arr6[4] = {1, 5, 6, 7};
-	int arr7[6] = {2, 3, 4, 8, 9, 10};
+/* 2nd round @07.05 */
 
-	cout << findMedianSortedArrays(arr1, 1, arr2, 2) << endl;
-	cout << findMedianSortedArrays(arr2, 2, arr3, 3) << endl;
-	cout << findMedianSortedArrays(arr3, 3, arr4, 4) << endl;
-	cout << findMedianSortedArrays(arr4, 4, arr5, 4) << endl;
-	cout << findMedianSortedArrays(arr5, 4, arr6, 4) << endl;
-	cout << findMedianSortedArrays(arr6, 4, arr7, 6) << endl;
+static inline int getMin(int a, int b) {
+	return a > b ? b : a;
+}
 
-	return 0;
+double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
+	int low1, high1, low2, high2, mid1, mid2;
+
+	low1 = 0;
+	high1 = nums1.size()-1;
+	low2 = 0;
+	high2 = nums2.size()-1;
+
+	double median1, median2;
+	while (low1 < high1-1 && low2 < high2-1) {
+		mid1 = (low1+high1)/2;
+		mid2 = (low2+high2)/2;
+		median1 = (high1-low1)%2 ? ((double)nums1[mid1]+nums1[mid1+1])/2 : num1[mid1];
+		median2 = (high2-low2)%2 ? ((double)nums2[mid2]+nums2[mid2+1])/2 : num2[mid2];
+		// when the arr size is even, you can't cut a real half!
+		int halfsize1 = (high1-low1)/2;
+		int halfsize2 = (high2-low2)/2;
+		int delSize = getMin(halfsize1, halfsize2);
+
+		if (median1 == median2) {
+			return median1;
+		} else if (median1 > median2) {
+			high1 -= delSize;
+			low2 += delSize;
+		} else {
+			high2 -= delSize;
+			low1 += delSize;
+		}
+	}
+	
+	vector<int> arr;
+	while (low1 <= high1 && low2 <= high2) {
+		if (nums1[low1] < nums[low2])
+			arr.push_back(nums1[low1++]);
+		else
+			arr.push_back(nums2[low2++]);
+	}
+	while (low1 <= high1)
+		arr.push_back(nums1[low1++]);
+	while (low2 <= high2)
+		arr.push_back(nums2[low2++]);
+
+
+	if (arr.size()%2)
+		return (double)arr[arr.size()/2];
+	else
+		return ((double)arr[arr.size()/2] + arr[arr.size()/2+1])/2;
 }
