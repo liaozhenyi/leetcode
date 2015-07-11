@@ -1,0 +1,27 @@
+/**********************************************************************
+
+ Determine whether an integer is a palindrome. Do this without extra space.
+
+**********************************************************************/
+
+int reverse(int x) {
+	int ans = 0;
+
+	while (x) {
+		int a = x%10;
+		x /= 10;
+		if (ans > (INT_MAX-a)/10)
+		    return 0;
+		ans = ans*10 + a;
+	}
+	return ans;
+}
+
+// I don't think there exists any solution that really need no extra space!
+bool isPalindrome(int x) {
+	if (x < 0)
+		return false;
+	int revx = reverse(x);
+
+	return revx==x;
+}

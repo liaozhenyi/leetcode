@@ -21,10 +21,7 @@
 
 **********************************************************************/
 
-#include <iostream>
-#include <vector>
-using namespace std;
-
+/*
 bool isMatch(const char *s, const char *p) {
 	int sLen, pLen, star;
 	vector<int> matchTemp, matchAns;
@@ -73,18 +70,61 @@ bool isMatch(const char *s, const char *p) {
 
 	return *matchAns.rbegin() == sLen;
 }
+*/
 
-int main(int argc, char *argv[])
-{
-	cout << isMatch("", "") << endl;
-	cout << isMatch("", "*") << endl;
-	cout << isMatch("a", ".*") << endl;
-	cout << isMatch("aab", "*a") << endl;
-	cout << isMatch("a", "") << endl;
-	cout << isMatch("aab", "c*a*b") << endl;
-	cout << isMatch("aa", "aa*a*") << endl;
-	cout << isMatch("hi", "*.") << endl;
-	cout << isMatch("abcbcd", "ac*b*c*b*c*d") << endl;
+/* 2nd round */
+// TODO: when I use s.size() and p.size(), I can't get the right result,
+// But when I change them to sLen and pLen, it functions well. 
+// How would this be happened?
+bool isMatch(string s, string p) {
+	int sLen = s.size(), pLen = p.size();
+	int starCnt = 0;
 
-	return 0;
+	for (auto c: p) {
+		if (c == '*')
+			++starCnt;
+	}
+	if (pLen-2*starCnt > sLen)
+		return false;
+
+	vector<int> matchPrev, matchCur;
+	matchPrev.push_back(-1);
+	for (int i = 0; i < pLen; ++i) {
+		if (p[i] == '*') {
+			continue;
+		} else if (p[i] == '.' && p[i+1] != '*') {
+			for (auto n: matchPrev) {
+				if (n+1 < sLen)
+					matchCur.push_back(n+1);
+			}
+		} else if (p[i] == '.' && p[i+1] == '*') {
+			for (int j = matchPrev[0]; j < sLen; ++j)
+				matchCur.push_back(j);
+			++i;
+		} else if (p[i+1] == '*') {
+			for (int j = 0; j < matchPrev.size(); ++j) {
+				if (matchCur.size() && (matchPrev[j] < matchCur.back()))
+					continue;
+				matchCur.push_back(matchPrev[j]);
+				for (int k = matchPrev[j]+1; k < sLen; ++k) {
+					if (s[k] != p[i])
+						break;
+					matchCur.push_back(k);
+				}
+			}
+			++i;
+		} else {
+			for (auto n: matchPrev) {
+				if (n+1 < sLen && s[n+1] == p[i])
+					matchCur.push_back(n+1);
+			}
+		}
+
+		matchPrev = matchCur;
+		matchCur.erase(matchCur.begin(), matchCur.end());
+		if (0 == matchPrev.size())
+			return false;
+	}
+	
+	return matchPrev.back() == sLen-1;
 }
