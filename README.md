@@ -16,3 +16,8 @@
 | 8 | String to Integer (atoi) | cpp | 12ms |
 | 9 | Palindrome Number | cpp | 80ms |
 | 10| Regular Expression Matching | cpp | 4ms |
+| 11| Container With Most Water | cpp | 24ms |
+| 12| Integer to Roman | cpp | 28ms |
+| 13| Roman to Integer | cpp | 40ms |
+| 14| Longest Common Prefix | cpp | 8ms |
+| 15| 3Sum | cpp | 132ms |
