@@ -21,3 +21,9 @@
 | 13| Roman to Integer | cpp | 40ms |
 | 14| Longest Common Prefix | cpp | 8ms |
 | 15| 3Sum | cpp | 132ms |
+| 16| 3Sum Closest | to be solved | |
+| 17| Letter Combinations of a Phone Number | cpp | 0ms |
+| 18| 4Sum | to be solved | |
+| 19| Remove Nth Node From End of List | cpp | 8ms |
+| 20| Valid Parentheses | cpp | 0ms |
+| 21| Merge Two Sorted Lists | cpp | 12ms |
