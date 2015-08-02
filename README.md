@@ -27,3 +27,9 @@
 | 19| Remove Nth Node From End of List | cpp | 8ms |
 | 20| Valid Parentheses | cpp | 0ms |
 | 21| Merge Two Sorted Lists | cpp | 12ms |
+| 22| Generate Parentheses | cpp | 4ms |
+| 23| Merge k Sorted Lists | cpp | 412ms |
+| 24| Swap Nodes in Pairs | cpp | 4ms |
+| 25| Reverse Nodes in k-Group | cpp | 24ms |
+
+

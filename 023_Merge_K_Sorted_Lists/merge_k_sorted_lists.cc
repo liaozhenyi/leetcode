@@ -5,19 +5,6 @@
 
 **********************************************************************/
 
-#include <iostream>
-#include <vector>
-#include <cstdlib>
-#include <ctime>
-
-using namespace std;
-
-struct ListNode {
-	int val;
-	ListNode *next;
-	ListNode(int x): val(x), next(NULL) {}
-};
-
 ListNode *mergeLists(ListNode *list1, ListNode *list2) {
 	ListNode *ptr1, *ptr2;
 	ListNode *head, *tail;
@@ -118,42 +105,67 @@ void deleteList(ListNode *list) {
 	}
 }
 
-void printList(ListNode *list) {
-	ListNode *ptr = list;
+/* 2nd round: use heap */
+void heapify(vector<ListNode *> &arr, int pos) {
+	int size = arr.size();
+	int idx = 2*pos + 1;
 
-	while (ptr) {
-		cout << ptr->val << " ";
-		ptr = ptr->next;
+	while (idx < size) {
+		if (idx+1 < size && arr[idx+1]->val < arr[idx]->val)
+			++idx;
+		if (arr[pos]->val < arr[idx]->val)
+			break;
+		ListNode *tmp = arr[pos];
+		arr[pos] = arr[idx];
+		arr[idx] = tmp;
+
+		pos = idx;
+		idx = 2*pos + 1;
 	}
-	cout << endl;
 }
 
-int main(int argc, char *argv[])
-{
-	srand((unsigned)time(0));
-	int array1[] = {1, 3, 5, 7, 9, 11};
-	int array2[] = {2, 4, 6, 8, 10, 12};
-	ListNode *list1, *list2, *list;
-	vector<ListNode *>listVector;
+void heapSort(vector<ListNode *> &arr) {
+	int idx = arr.size()/2 - 1;
 
-	list1 = createList(array1, sizeof(array1)/sizeof(int));
-	list2 = createList(array2, sizeof(array2)/sizeof(int));
+	for (int i = idx; i >= 0; --i)
+		heapify(arr, i);
+}
 
-	printList(list1);
-	printList(list2);
+void getMinNode(vector<ListNode *> &arr) {
+	ListNode *min = arr[0];
 
-	list = mergeLists(list1, list2);
-	printList(list);
+	arr[0] = arr[0]->next;
+	if (NULL == arr[0]) {
+		arr[0] = arr.back();
+		arr.pop_back();
+	}
+	heapify(arr, 0);
 
-	deleteList(list);
+	return min;
+}
 
-	for (int i = 0; i < 1; i++)
-		listVector.push_back(new ListNode(rand()%5000));
+ListNode *mergeKLists(vector<ListNode *>& lists) {
+	vector<ListNode *> arr = vector<ListNode *>();
+	ListNode *head = NULL, *tail = NULL;
 
-	list = mergeKLists(listVector);
-	printList(list);
+	for (auto &l: lists) {
+		if (NULL != l) {
+			arr.push_back(l);
+		}
+	}
 
-	deleteList(list);	
+	heapSort(arr);
 
-	return 0;
+	while (arr.size()) {
+		ListNode *l = getMinNode(arr);
+		if (NULL == head) {
+			head = l;
+			tail = l;
+		} else {
+			tail->next = l;
+			tail = l;
+		}
+	}
+
+	return head;
 }
